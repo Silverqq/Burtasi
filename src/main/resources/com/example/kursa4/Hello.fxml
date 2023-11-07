@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="Sign" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursa4.HelloController">
+   <children>
+      <Label layoutX="257.0" layoutY="70.0" text="Буртасы">
+         <font>
+            <Font name="Calibri" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="133.0" text="Вход">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Login" layoutX="231.0" layoutY="169.0" promptText="Логин" />
+      <PasswordField fx:id="Password" layoutX="231.0" layoutY="212.0" promptText="Пароль" />
+      <Button fx:id="SignIn" layoutX="260.0" layoutY="247.0" mnemonicParsing="false" onAction="#SignIn" prefHeight="32.0" prefWidth="98.0" style="-fx-background-color: black;" text="Войти" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="registr" layoutX="266.0" layoutY="287.0" mnemonicParsing="false" onAction="#Registration" prefHeight="25.0" prefWidth="85.0" text="Регистрация" textFill="#6a00ff" />
+      <Button fx:id="calendar" layoutX="26.0" layoutY="330.0" mnemonicParsing="false" onAction="#Calendar" text="Calendar" />
+   </children>
+</AnchorPane>
