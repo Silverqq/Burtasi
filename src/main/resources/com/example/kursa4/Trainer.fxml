@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Tr" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: Lightgray;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursa4.Trainer">
+    <DatePicker fx:id="DatePicker" editable="false" layoutX="350.0" layoutY="167.0" prefHeight="25.0" prefWidth="180.0" promptText="---------------------------&gt;" />
+    <Label layoutX="134.0" layoutY="141.0" text="Время" textFill="#6c30c6">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Label>
+    <TextField fx:id="Time" layoutX="67.0" layoutY="166.0" prefHeight="26.0" prefWidth="180.0" promptText="8:00 - 12:00" />
+    <Label layoutX="217.0" layoutY="87.0" text="Название Дисциплины" textFill="#6c30c6">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Label>
+    <TextField fx:id="Discipline" layoutX="211.0" layoutY="120.0" prefHeight="25.0" prefWidth="180.0" promptText="Гимнастика" />
+    <Label layoutX="274.0" layoutY="192.0" text="Тренер" textFill="#6c30c6">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Label>
+    <TextField fx:id="Lastname" layoutX="210.0" layoutY="217.0" prefHeight="26.0" prefWidth="180.0" promptText="Фамилия" />
+    <TextField fx:id="Name" layoutX="211.0" layoutY="250.0" prefHeight="26.0" prefWidth="180.0" promptText="Имя" />
+    <TextField fx:id="SurName" layoutX="210.0" layoutY="286.0" prefHeight="26.0" prefWidth="180.0" promptText="Отчество" />
+    <Button fx:id="AddEventSport" layoutX="217.0" layoutY="322.0" mnemonicParsing="false" onAction="#AddSport" prefHeight="36.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Добавить Тренировку" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font></Button>
+    <Label layoutX="426.0" layoutY="145.0" text="Дата" textFill="#6c30c6">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Label>
+    <Label layoutX="147.0" layoutY="32.0" text="Добавление Тренировки" textFill="#6c30c6">
+        <font>
+            <Font name="System Bold Italic" size="25.0" />
+        </font>
+    </Label>
+    <Button fx:id="Return" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#Return" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: gray;" text="Вернуться" textFill="WHITE">
+        <font>
+            <Font name="System Bold Italic" size="15.0" />
+        </font>
+    </Button>
+</AnchorPane>

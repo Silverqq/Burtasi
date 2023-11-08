@@ -11,9 +11,10 @@ public class MyApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException, SQLException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MyApplication.class.getResource("Hello.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MyApplication.class.getResource("Start.fxml"));
         Scene scene = new Scene(fxmlLoader.load(),600, 500);
         stage.setScene(scene);
+        stage.setTitle("Буртасы");
         stage.show();
         stage.setResizable(false);
     }
@@ -21,4 +22,5 @@ public class MyApplication extends Application {
     public static void main(String[] args) {
         launch();
     }
+
 }

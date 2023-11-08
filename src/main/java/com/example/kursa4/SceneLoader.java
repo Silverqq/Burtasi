@@ -13,6 +13,7 @@ public class SceneLoader {
         Scene newScene = new Scene(newRoot);
         Stage stage = (Stage) root.getScene().getWindow();
         stage.setScene(newScene);
+        stage.setTitle("Буртасы");
         stage.show();
         stage.setResizable(false);
     }

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Client" prefHeight="488.0" prefWidth="740.0" style="-fx-background-color: Lightgray;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursa4.Client">
+   <children>
+      <DatePicker fx:id="Datepick" layoutX="552.0" layoutY="95.0" onInputMethodTextChanged="#Initialize" />
+      <TableView fx:id="TableV" editable="true" layoutY="134.0" prefHeight="356.0" prefWidth="740.0" style="-fx-background-color: Lightgray;">
+        <columns>
+          <TableColumn fx:id="discipline" editable="false" prefWidth="135.0" resizable="false" sortable="false" text="Дисциплина" />
+          <TableColumn fx:id="LastName" editable="false" prefWidth="130.0" resizable="false" sortable="false" text="Фамилия" />
+            <TableColumn fx:id="Name" editable="false" prefWidth="125.0" resizable="false" sortable="false" text="Имя" />
+            <TableColumn fx:id="SurName" editable="false" prefWidth="157.0" resizable="false" sortable="false" text="Отчество" />
+            <TableColumn fx:id="Date" editable="false" prefWidth="92.0" resizable="false" sortable="false" text="Дата" />
+            <TableColumn fx:id="Time" editable="false" prefWidth="100.0" resizable="false" sortable="false" text="Время" />
+        </columns>
+      </TableView>
+      <Button fx:id="LogOut" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#LogOut" style="-fx-background-color: gray;" text="Вернуться" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font></Button>
+      <Button fx:id="Update" layoutX="458.0" layoutY="95.0" mnemonicParsing="false" onAction="#Initialize" style="-fx-background-color: gray;" text="Просмотреть" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="299.0" layoutY="31.0" text="Расписание" textFill="#6c30c6">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
