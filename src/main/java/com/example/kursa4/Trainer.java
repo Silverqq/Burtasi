@@ -60,6 +60,9 @@ public class Trainer {
         }
     }
     public void Return(ActionEvent actionEvent) throws IOException {
-        SceneLoader.loadNewScene("Hello.fxml", Tr);
+        SceneLoader.loadNewScene("Start.fxml", Tr);
+    }
+    public void Workout(ActionEvent actionEvent) throws IOException {
+        SceneLoader.loadNewScene("TrainerWork.fxml", Tr);
     }
 }
