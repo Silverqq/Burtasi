@@ -24,16 +24,11 @@ public class HelloController {
     @FXML
     private Button SignIn;
 
-    @FXML
-    private Button registr;
-
-    @FXML
-    private Button calendar;
-
     String toastMsg = "INVALID Login or Password";
     int toastMsgTime = 400; //0.4 seconds
     int fadeInTime = 200; //0.2 seconds
     int fadeOutTime = 200; //0.2 seconds
+
     @FXML
     void initialize() {
         SignIn.setOnAction(event -> {
@@ -75,10 +70,6 @@ public class HelloController {
     @FXML
     public void Registration(ActionEvent actionEvent) throws IOException {
         SceneLoader.loadNewScene("Registration.fxml", Sign);
-    }
-
-    public void Client(ActionEvent event) throws IOException {
-        SceneLoader.loadNewScene("Client.fxml", Sign);
     }
 
     public void Return(ActionEvent event) throws IOException {

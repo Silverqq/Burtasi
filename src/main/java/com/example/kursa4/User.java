@@ -40,12 +40,4 @@ public class User {
     public void setLogin(String login) {
         Login = login;
     }
-
-    public String getLastName() {
-        return LastName;
-    }
-
-    public void setLastName(String lastName) {
-        LastName = lastName;
-    }
 }

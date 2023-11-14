@@ -7,7 +7,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
-import java.sql.SQLException;
 import java.util.Objects;
 
 public class Registration {
@@ -27,9 +26,7 @@ public class Registration {
 
     @FXML
     private Button Registration;
-    @FXML
-    private Button Return;
-    String toastMsg = "INVALID Login or Password";
+    String toastMsg = "Fill in the data";
     int toastMsgTime = 400; //0.4 seconds
     int fadeInTime = 200; //0.2 seconds
     int fadeOutTime = 200; //0.2 seconds
@@ -48,15 +45,15 @@ public class Registration {
         DatabaseHandler dbHandler = new DatabaseHandler();
         Registration.setOnAction(event -> {
             if (!Objects.equals(Name.getText(), "") && !Objects.equals(LastName.getText(), "")
-                    && !Objects.equals(Password.getText(), "") && !Objects.equals(Login.getText(), "")){
+                    && !Objects.equals(Password.getText(), "") && !Objects.equals(Login.getText(), "")) {
                 dbHandler.regUser(Name.getText(), LastName.getText(), Password.getText(), Login.getText());
                 try {
                     SceneLoader.loadNewScene("Trainer.fxml", Reg);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
-                }}
-            else
-            ToastController.makeText(toastMsg, toastMsgTime, fadeInTime, fadeOutTime);
+                }
+            } else
+                ToastController.makeText(toastMsg, toastMsgTime, fadeInTime, fadeOutTime);
         });
     }
 }

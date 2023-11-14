@@ -1,8 +1,5 @@
 package com.example.kursa4;
 
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-
 public class Sport {
     private String Discipline;
     private String Name;
@@ -24,13 +21,8 @@ public class Sport {
 
     }
 
-    public String getTime() {
-        return Time;
-    }
 
-    public void setTime(String time) {
-        Time = time;
-    }
+
 
     public String getDate() {
         return Date;
@@ -40,21 +32,6 @@ public class Sport {
         Date = date;
     }
 
-    public String getSurName() {
-        return SurName;
-    }
-
-    public void setSurName(String surName) {
-        SurName = surName;
-    }
-
-    public String getLastName() {
-        return LastName;
-    }
-
-    public void setLastName(String lastName) {
-        LastName = lastName;
-    }
 
     public String getName() {
         return Name;
@@ -64,11 +41,4 @@ public class Sport {
         Name = name;
     }
 
-    public String getDiscipline() {
-        return Discipline;
-    }
-
-    public void setDiscipline(String discipline) {
-        Discipline = discipline;
-    }
 }
