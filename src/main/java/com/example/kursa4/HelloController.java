@@ -65,6 +65,7 @@ public class HelloController {
             }
             System.out.println("Success!!!");
         }
+        else ToastController.makeText(toastMsg, toastMsgTime, fadeInTime, fadeOutTime);
     }
 
     @FXML

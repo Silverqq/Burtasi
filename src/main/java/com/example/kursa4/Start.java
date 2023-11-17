@@ -17,12 +17,12 @@ public class Start {
     private Button TR;
 
     @FXML
-    public void Tr(ActionEvent actionEvent) throws IOException {
+    public void Trainer(ActionEvent actionEvent) throws IOException {
         SceneLoader.loadNewScene("Hello.fxml", start);
     }
 
     @FXML
-    public void Cl(ActionEvent actionEvent) throws IOException {
+    public void Client(ActionEvent actionEvent) throws IOException {
         SceneLoader.loadNewScene("Client.fxml", start);
     }
 }

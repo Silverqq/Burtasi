@@ -41,4 +41,35 @@ public class Sport {
         Name = name;
     }
 
+    public String getDiscipline() {
+        return Discipline;
+    }
+
+    public void setDiscipline(String discipline) {
+        Discipline = discipline;
+    }
+
+    public String getLastName() {
+        return LastName;
+    }
+
+    public void setLastName(String lastName) {
+        LastName = lastName;
+    }
+
+    public String getSurName() {
+        return SurName;
+    }
+
+    public void setSurName(String surName) {
+        SurName = surName;
+    }
+
+    public String getTime() {
+        return Time;
+    }
+
+    public void setTime(String time) {
+        Time = time;
+    }
 }

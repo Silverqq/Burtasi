@@ -44,7 +44,7 @@ public class Trainer {
     int fadeOutTime = 200; //0.2 seconds
     @FXML
     public void AddSport(ActionEvent event){
-        try{ToastController.makeText(toastMsg1, toastMsgTime, fadeInTime, fadeOutTime);
+        try{
         String date = DatePicker.getValue().toString();
         DatabaseHandler db = new DatabaseHandler();
         AddEventSport.setOnAction(event1 -> {
